@@ -17,7 +17,9 @@ cmake \
 cmake --build . --verbose --parallel ${CPU_COUNT}
 
 # test
-ctest --verbose --parallel ${CPU_COUNT}
+if [[ "${CONDA_BUILD_CROSS_COMPILATION:-}" != "1" ]]; then
+	ctest --verbose --parallel ${CPU_COUNT}
+fi
 
 # install
 cmake --build . --verbose --parallel ${CPU_COUNT} --target install
