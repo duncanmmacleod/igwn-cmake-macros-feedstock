@@ -1,5 +1,5 @@
 {% set name = "igwn-cmake-macros" %}
-{% set version = "1.4.0" %}
+{% set version = "1.5.0" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: http://software.igwn.org/sources/source/{{ name }}-{{ version }}.tar.gz
-  sha256: 85cfcfed9d05dd329a7690ec768711083dab93546fb44affb6a193b6ce5b01e6
+  sha256: 298b922d8b0aa73958c9165128ead38637f4e8fa023b3633d0900ec9ec5e360b
 
 build:
   number: 0
