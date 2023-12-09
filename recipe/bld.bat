@@ -4,7 +4,7 @@ cd _build
 :: configure
 cmake ^
 	"%SRC_DIR%" ^
-	-G "NMake Makefiles" ^
+	-G "Ninja" ^
 	-DCMAKE_BUILD_TYPE:STRING=Release ^
 	-DCMAKE_INSTALL_PREFIX:PATH="%LIBRARY_PREFIX%"
 if errorlevel 1 exit 1

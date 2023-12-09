@@ -16,6 +16,7 @@ requirements:
   build:
     - cmake
     - make  # [not win]
+    - ninja  # [win]
     - pkg-config
   run_constrained:
     - igwn-cmake <0a0
