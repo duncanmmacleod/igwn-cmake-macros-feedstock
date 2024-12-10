@@ -10,7 +10,8 @@ source:
   sha256: a7bbbe2f378abeedeeedb7838fdac2818c9553cb033a854c10a51c08d5cc2bb8
 
 build:
-  number: 0
+  number: 1
+  noarch: generic
 
 requirements:
   build:
@@ -18,6 +19,9 @@ requirements:
     - make  # [not win]
     - ninja  # [win]
     - pkg-config
+  run:
+    - __unix  # [unix]
+    - __win  # [win]
   run_constrained:
     - igwn-cmake <0a0
 
